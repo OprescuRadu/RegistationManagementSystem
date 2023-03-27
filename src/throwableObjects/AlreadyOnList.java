@@ -1,4 +1,4 @@
-package ThrowableObjects;
+package throwableObjects;
 
 public class AlreadyOnList extends RuntimeException {
     public AlreadyOnList() {

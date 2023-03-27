@@ -1,4 +1,4 @@
-package ThrowableObjects;
+package throwableObjects;
 
 import java.util.InputMismatchException;
 

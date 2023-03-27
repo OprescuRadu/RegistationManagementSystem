@@ -1,6 +1,4 @@
-package ThrowableObjects;
-
-import java.util.InputMismatchException;
+package throwableObjects;
 
 public class GuestNotFound extends RuntimeException {
     public GuestNotFound() {
