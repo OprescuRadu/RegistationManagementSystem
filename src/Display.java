@@ -1,7 +1,7 @@
-import ThrowableObjects.AlreadyOnList;
-import ThrowableObjects.EmailFormatException;
-import ThrowableObjects.GuestNotFound;
-import ThrowableObjects.PhoneFormatException;
+import throwableObjects.AlreadyOnList;
+import throwableObjects.EmailFormatException;
+import throwableObjects.GuestNotFound;
+import throwableObjects.PhoneFormatException;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -17,6 +17,7 @@ public class Display {
 
     public void execute() {
         boolean quit = false;
+        System.out.println("Welcome to " + event.getEventName() + "!");
         while (!quit) {
             System.out.println();
             System.out.println("Waiting for command: (type 'help' and press 'Enter' to see full list of commands) ");

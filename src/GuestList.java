@@ -4,15 +4,20 @@ import java.util.ArrayList;
 public class GuestList {
 
     private final int capacity;
-    private String eventName;
+
+    private final String eventName;
     // One list for guests both registered and on the waiting list
-    private ArrayList<Guest> guestList;
+    private final ArrayList<Guest> guestList;
 
 
     public GuestList(String eventName, int capacity) {
         this.eventName = eventName;
         this.capacity = capacity;
         this.guestList = new ArrayList<>(capacity);
+    }
+
+    public String getEventName() {
+        return eventName;
     }
 
     public int getCapacity() {
@@ -129,7 +134,7 @@ public class GuestList {
     }
 
     public ArrayList<Guest> smartSearch(String str) {
-        ArrayList<Guest> matches = new ArrayList<Guest>();
+        ArrayList<Guest> matches = new ArrayList<>();
         for (Guest guest : this.guestList) {
             if (guest.partialSearch(str)) {
                 matches.add(guest);
